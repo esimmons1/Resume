@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (Modified for Ellis Simmons)
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeVolunteerHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Ellis Simmons} \\ \vspace{1pt}
+    \small (412)863-9298 $|$ {Simmons.ellis725@gmail.com} $|$ \href{https://github.com/esimmons1}{\underline{GitHub}} $|$
+    Pittsburgh, PA 15206
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Community College of Allegheny County}{August 2022 -- June 2025}
+      {Engineering Technology - 3.7 GPA}{Pittsburgh, PA}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Calculus I \& II, Physics I - III, Java, MIPS, Python}
+      \resumeItem{Co-founder \& VP, CCAC Math Book Club}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Produce Shift Lead}{April 2024 -- Present}
+      {Giant Eagle}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Supervised team operations, ensuring efficient workflow, proper inventory management, and high-quality customer service}
+        \resumeItem{Maintained produce freshness through regular inspections and enforced food safety protocols}
+        \resumeItem{Trained staff, resolved customer issues, and optimized stock levels to meet demand}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Head Lifeguard}{Fall 2022 -- January 2024}
+      {Kingsley Association Community}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Demonstrated exceptional leadership and customer service skills while overseeing lifeguard team operations}
+        \resumeItem{Aided patrons with membership enquiries, and enforced pool rules and safety procedures}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Electrician's Apprentice}{Summers 2021 -- 2023}
+      {Simmons Electrical Services}{Delmar, DE}
+      \resumeItemListStart
+        \resumeItem{Assisted with wiring installations, lighting fixtures, and outlet fittings for residential and commercial projects}
+        \resumeItem{Worked alongside licensed electricians to troubleshoot electrical issues and ensure adherence to safety standards}
+        \resumeItem{Operated tools and prepared job sites to maintain high standards of workmanship and timely project completion}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Arduino Accelerometer System}{Fall 2023}
+      {Rocketry Club Project}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Designed and programmed an accelerometer system using Arduino to track rocket flight data and performance metrics}
+        \resumeItem{Integrated sensor data collection with real-time processing to monitor acceleration, velocity, and altitude during rocket launches}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------VOLUNTEER WORK-----------
+\section{Volunteer Work}
+  \resumeSubHeadingListStart
+    \resumeVolunteerHeading
+        {Computer Reach -- Pittsburgh, PA}{May 2025 -- Present}
+        \resumeItemListStart
+            \resumeItem{Assisting with computer refurbishment and technology access initiatives for underserved communities}
+            \resumeItem{Formatted and cleaned computers for donation using Linux}
+        \resumeItemListEnd
+    \resumeVolunteerHeading
+      {Phi Beta Sigma Fraternity, Inc. -- Pittsburgh, PA}{2015 -- Present}
+      \resumeItemListStart
+        \resumeItem{Supported public service projects, including community outreach, educational initiatives, and social action programs}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: HTML, CSS, Python, MIPS, Java; Website Development} \\
+     \textbf{Software}{: Microsoft Office Products} \\
+     \textbf{Languages}{: Spanish} \\
+     \textbf{Technical}{: 3D modeling and printing, CNC Machining, Electronics} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{Extracurricular Activities}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Kenpo Karate, Trumpet, Swimming, Kickboxing, Rock climbing, Mountain biking, BBQ, and Rocketry
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
